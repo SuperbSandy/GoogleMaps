@@ -4,12 +4,12 @@ Basic Google Maps integration with Xcode project swift 4
 
 ## Getting Started
 
-###1. Create a new Xcode project.
+##1. Create a new Xcode project.
 Go to Xcode -> Choose Single View Application -> Enter the product name -> Next and Create App
 
-###2. Open terminal in Mac and go to the Xcode project main folder path
+##2. Open terminal in Mac and go to the Xcode project main folder path
 
-###3. With project root folder as the current directory enter the following commands:
+##3. With project root folder as the current directory enter the following commands:
 a. "pod init" : This initialises the Podfile. 
 b. "open Podfile" : This opens the Podfile with TextEdit as default
 c. Add the following in Podfile and save it:  
@@ -22,23 +22,24 @@ target 'MapApp' do
   	pod 'GooglePlaces'
 end
 
-###4. Close the Xcode project and open .xcworkspace instead of .xcodeproj 
+##4. Close the Xcode project and open .xcworkspace instead of .xcodeproj 
 
 ##Google Maps registration
 
-###Goto the following link:
+##Goto the following link:
 https://developers.google.com/maps/ios/
 Enter the login id credentials
-###Goto https://developers.google.com/maps/documentation/ios-sdk/
+
+##Goto https://developers.google.com/maps/documentation/ios-sdk/
 And Select get a key. Follow the steps and get the key.
 
-###5. Opened  xcworkspace in Xcode goto Appdelegate and Under Application didFinishLaunchingWithOptions
+##5. Opened  xcworkspace in Xcode goto Appdelegate and Under Application didFinishLaunchingWithOptions
 Enter the following code
 GMSServices.provideAPIKey(“Enter_Your_Key_Here”)
 
-###6.  Create new file in Xcode from file -> New file Select Swift file -> Next -> Save as MapView.
+##6.  Create new file in Xcode from file -> New file Select Swift file -> Next -> Save as MapView.
 
-###7. Open MapView.swift and following code
+##7. Open MapView.swift and following code
 
 class MapView{
     func MapView()-> GMSMapView {
@@ -55,6 +56,6 @@ class MapView{
         return mapView
     }
 
-###8. In ViewController.swift file under viewDidLoad add the following
+##8. In ViewController.swift file under viewDidLoad add the following
 let mapView = MapView()
 view = mapView.MapView()
