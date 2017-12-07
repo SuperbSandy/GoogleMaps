@@ -1,4 +1,4 @@
-# GoogleMaps
+# Integrating Google Maps
 # Google Maps with Swift 4
 Basic Google Maps integration with Xcode project swift 4
 
